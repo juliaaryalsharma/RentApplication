@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Colombia's Best Placeses</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css"/>
+    <link rel="stylesheet" href="style/main.css"/>
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+    <script src="phonegap.js"></script>
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+    <script type="text/javascript" src="lib/.ui.min.js"></script>
+</head>
+<body>
+
+    <div data-role="page" id=home>
+        <div data-role="header" data-position="fixed">
+            <h3>Colombia</h3>
+        </div>
+        <div data-role="content">
+
+                <ul data-role="listview">
+                    <li><a href="#city1" data-transition="slide">
+                          <img src="images/bogota.png" alt="Bogota City"></img>
+                          <h3><b>Bogota</b></h3>
+                          <p class="about">The National Capital, the largest and most populated city</p>
+                        </a>
+                    </li>
+                    <li><a href="#city2" data-transition="slide">
+                          <img src="images/medellin.jpg" alt="Bogota City"></img>
+                          <h3><b>Medellin</b></h3>
+                          <p class="about">It's the second largest city in Colombia</p>
+                        </a>
+                    </li>
+                    <li><a href="#city3" data-transition="slide">
+                          <img src="images/cali1.jpg" alt="Bogota City"></img>
+                          <h3><b>Cali</b></h3>
+                          <p class="about">The world capital of salsa music and the sweet cane crops</p>
+                        </a>
+                    </li>
+                    <li><a href="#city4" data-transition="slide">
+                          <img src="images/cartagena.jpg" alt="Bogota City"></img>
+                          <h3><b>Cartagena</b></h3>
+                          <p class="about">A gorgeous fishing village on Colombia's Caribbean coast</p>
+                        </a>
+                    </li>
+                    <li><a href="#city5" data-transition="slide">
+                          <img src="images/cafePark.jpg" alt="Bogota City"></img>
+                          <h3><b>The Coffee Region</b></h3>
+                          <p class="about">It's famous for growing and production of a majority of the Colombian coffee</p>
+                        </a>
+                    </li>
+                    <li><a href="#city6" data-transition="slide">
+                          <img src="images/sanAndresIsl.jpg" alt="Bogota City"></img>
+                          <h3><b>San Andres Island</b></h3>
+                          <p class="about">It's a Colombian coral island in the Caribbean Sea</p>
+                        </a>
+                    </li>
+                    <li><a href="#city7" data-transition="slide">
+                          <img src="images/amazonRiver.jpg" alt="Bogota City"></img>
+                          <h3><b>Amazon Region</b></h3>
+                          <p class="about">The Amazon region has one of the most biodiverse ecosystems in the world</p>
+                        </a>
+                    </li>
+                </ul>
+
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="fixedFooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#location" data-icon="info">Location</a></li>
+
+                </ul>
+            </div>
+        </div>
+   </div>
+
+
+<!-- second page-->
+
+   <div data-role="page" id="city1" data-add-back-btn="true" >
+        <div data-role="header" data-position="fixed">
+            <h1>Bogota</h1>
+        </div>
+        <div data-role="content">
+                <table>
+                    <tr><td rowspan="3"><img src="images/bogota.png" class="tdImage"></td><td><h3>Bogota</h3></td></tr>
+                    <tr><td class="tdName">The National Capital, the largest and most populated city</td></tr>
+                    <tr><td class="tdPopulation">Weather: 19°C. Pop: 6.763 mill.</td></tr>
+                </table>
+
+            <p><h4>DESCRIPTION</h4></p>
+            <p class="descript">Bogotá, the capital of Colombia, located in the center of the country on a vast plain at 2,600 meters above sea level and with a moderate temperature has a population of eight million people from all corners of Colombia; a city as diverse as the entire country. Bogotá has a varied nightlife offering domestic and foreign tourists alike different options and styles.</p>
+            <a href="https://www.youtube.com/watch?v=gHwykIbAZM4" data-role="button" rel="external">VISIT WEBSITE</a>
+
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="fixedFooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#location" data-icon="info">Location</a></li>
+
+                </ul>
+            </div>
+        </div>
+   </div>
+   <div data-role="page" id="city2" data-add-back-btn="true" data-back-btn-text="Home">
+        <div data-role="header" data-position="fixed">
+            <h1>Medellin</h1>
+        </div>
+        <div data-role="content">
+                <table>
+                    <tr><td rowspan="3"><img src="images/medellin.jpg" class="tdImage"></td><td><h3>Medellin</h3></td></tr>
+                    <tr><td class="tdName">It is the second largest city in Colombia</td></tr>
+                    <tr><td class="tdPopulation">Weather: 32°C. Pop: 2.184 mill.</td></tr>
+                </table>
+
+            <p><h4>DESCRIPTION</h4></p>
+            <p class="descript">Medellín is the capital of Colombia’s mountainous Antioquia province. Nicknamed the “City of Eternal Spring” for its temperate weather, it hosts a famous annual Flower Festival. Modern metrocables link the city to surrounding barrios and offer sweeping views of the Aburrá Valley below. Sculptures by Fernando Botero decorate downtown's Botero Plaza, while the Museo de Antioquia displays more of the Colombian artist’s work.</p>
+            <a href="https://www.youtube.com/watch?v=kZrHIWrasA0" data-role="button" rel="external">VISIT WEBSITE</a>
+
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="fixedFooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#location" data-icon="info">Location</a></li>
+
+                </ul>
+            </div>
+        </div>
+   </div>
+   <div data-role="page" id="city3" data-add-back-btn="true" data-back-btn-text="Home">
+        <div data-role="header" data-position="fixed">
+            <h1>Cali</h1>
+        </div>
+        <div data-role="content">
+                <table>
+                    <tr><td rowspan="3"><img src="images/cali1.jpg" class="tdImage"></td><td><h3>Cali</h3></td></tr>
+                    <tr><td class="tdName">The world capital of salsa music and the sweet cane crops</td></tr>
+                    <tr><td class="tdPopulation">Weather: 25°C. Pop: 2.045 mill.</td></tr>
+                </table>
+
+            <p><h4>DESCRIPTION</h4></p>
+            <p class="descript">The Colombian city of Cali, known as the world capital of salsa, also serves as the urban center of the country's Afro-Pacific culture. Host Jacob Edgar discovers why Columbia adopted as its native style the upbeat tropical dance music of salsa. Cali is the kind of place that provides all the substance. It's a hot, gritty city with a passion for life that draws you in and stays with you long after you leave town.</p>
+            <a href="https://www.youtube.com/watch?v=268JDJQn6_w" data-role="button" rel="external">VISIT WEBSITE</a>
+
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="fixedFooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#location" data-icon="info">Location</a></li>
+
+                </ul>
+            </div>
+        </div>
+   </div>
+   <div data-role="page" id="city4" data-add-back-btn="true" data-back-btn-text="Home">
+        <div data-role="header" data-position="fixed">
+            <h1>Cartagena</h1>
+        </div>
+        <div data-role="content">
+                <table>
+                    <tr><td rowspan="3"><img src="images/bogota.png" class="tdImage"></td><td><h3>Cartagena</h3></td></tr>
+                    <tr><td class="tdName">A gorgeous fishing village on Colombia's Caribbean coast, has excellent beaches, a historic old town</td></tr>
+                    <tr><td class="tdPopulation">Weather: 30°C. Pop 1.075 mill.</td></tr>
+                </table>
+
+            <p><h4>DESCRIPTION</h4></p>
+            <p class="descript">Cartagena is a modern port city on Colombia’s Caribbean coast. At its core is the walled Old Town, with 16th-century plazas, cobblestone streets and colorful colonial buildings. With a tropical climate, the city is a popular beach destination. Reachable by boat are the nearby shores of Isla de Barú and Islas del Rosario, known for their coral reefs and scuba diving.</p>
+            <a href="https://www.youtube.com/watch?v=hrUE2IG3JWw" data-role="button" rel="external">VISIT WEBSITE</a>
+
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="fixedFooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#location" data-icon="info">Location</a></li>
+
+                </ul>
+            </div>
+        </div>
+   </div>
+   <div data-role="page" id="city5" data-add-back-btn="true" data-back-btn-text="Home">
+        <div data-role="header" data-position="fixed">
+            <h1>The Coffee Region</h1>
+        </div>
+        <div data-role="content">
+                <table>
+                    <tr><td rowspan="3"><img src="images/cafePark.jpg" class="tdImage"></td><td><h3>The Coffee Region</h3></td></tr>
+                    <tr><td class="tdName"> It includes three departments, Armenia, Manizales and Caldas</td></tr>
+                    <tr><td class="tdPopulation">Weather: 19°C. Pop: 1.58 mill.</td></tr>
+                </table>
+
+            <p><h4>DESCRIPTION</h4></p>
+            <p class="descript">The Colombian coffee Region (Spanish: Eje Cafetero), also known as the Coffee Triangle (Spanish: Triángulo del Café) is a part of the Colombian Paisa region in the rural area of Colombia, famous for growing and production of a majority of the Colombian coffee, considered by some as the best coffee in the world. There are three departments in the area: Caldas, Quindío and Risaralda. The most visited cities are Manizales, Armenia and Pereira.</p>
+            <a href="https://www.youtube.com/watch?v=bFdrev7OWlE" data-role="button" rel="external">VISIT WEBSITE</a>
+
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="fixedFooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#location" data-icon="Location">Info</a></li>
+
+                </ul>
+            </div>
+        </div>
+   </div>
+   <div data-role="page" id="city6" data-add-back-btn="true" data-back-btn-text="Home">
+        <div data-role="header" data-position="fixed">
+            <h1>San Andres Island</h1>
+        </div>
+        <div data-role="content">
+                <table>
+                    <tr><td rowspan="3"><img src="images/sanAndresIsl.jpg" class="tdImage"></td><td><h3>San Andres Island</h3></td></tr>
+                    <tr><td class="tdName">It is a popular tourism destination and diving attraction</td></tr>
+                    <tr><td class="tdPopulation">Weather: 34°C. Pop: 67.912</td></tr>
+                </table>
+
+            <p><h4>DESCRIPTION</h4></p>
+            <p class="descript">It is a popular tourism destination and diving attraction. The island is actually part of the San Andres Archipelago that includes San Andres, Providencia and Santa Catalina. San Andres lies off the northeast coast of Colombia more than 400 miles and sits adjacent to Nicaragua. Colombia gained control over the islands in 1928 as part of the Esguerra-Bárcenas treaty with Nicaragua. The territory has been a hot topic of debate over the last decade as Nicaragua has attempted to regain control over the area through legal protests in international courts.</p>
+            <a href="https://www.youtube.com/watch?v=LWhh6sGzdhA" data-role="button" rel="external">VISIT WEBSITE</a>
+
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="fixedFooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#location" data-icon="info">Location</a></li>
+
+                </ul>
+            </div>
+        </div>
+   </div>
+   <div data-role="page" id="city7" data-add-back-btn="true" data-back-btn-text="Home">
+        <div data-role="header" data-position="fixed">
+            <h1>Amazon Region</h1>
+        </div>
+        <div data-role="content">
+                <table>
+                    <tr><td rowspan="3"><img src="images/amazonRiver.jpg" class="tdImage"></td><td><h3>Amazon Region</h3></td></tr>
+                    <tr><td class="tdName">The National Capital, the largest and most populated city</td></tr>
+                    <tr><td class="tdPopulation">Weather: 28°C. Pop: 500.912</td></tr>
+                </table>
+
+            <p><h4>DESCRIPTION</h4></p>
+            <p class="descript">In Colombia, the Amazon region is formed not only by the Amazonas department in the south east of the country but also by other five departments that share the same type of weather and landscape as the Amazon, which are: Vaupés, Caquetá, Guainía, Guaviare and Putumayo. The high diversity of plants and animal species are found in this area of the country contributes to place Colombia as the most biodiverse country in the world per square meter.</p>
+            <a href="https://www.youtube.com/watch?v=csnZhpt74Zo" data-role="button" rel="external">VISIT WEBSITE</a>
+
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="fixedFooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#location" data-icon="info">Location</a></li>
+
+                </ul>
+            </div>
+        </div>
+   </div>
+<!-- Info Page-->
+<div data-role="page" id="location">
+    <div data-role="header" data-position="fixed">
+            <h1>Location</h1>
+    </div>
+    <div data-role="content">
+            <p claas="locationT"><center><h2 >General Location</h2></center></p>
+            <p><h4>MAP</h4></p>
+        <p>
+            <iframe class="gMap" width="100%" height="250" frameborder="1" scrolling="no" marginheight="0" marginwidth="0"   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3055943.088089348!2d-74.65639764800677!3d3.20225744447109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C+Bogota%2C+Colombia!5e0!3m2!1sen!2sca!4v1457273278682" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+       </p>
+        <a href="#home" data-icon="home" data-role="button">Home</a>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="fixedFooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#location" data-icon="info">Location</a></li>
+
+                </ul>
+            </div>
+    </div>
+</div>
+
+</body>
+</html>

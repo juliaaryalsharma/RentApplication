@@ -1,0 +1,64 @@
+.mainBody{
+    background-color:blue;
+}
+
+img.ui-li-thumb{
+	max-height:230px;
+	max-width:75px;
+	margin:10px;
+
+}
+
+.ui-li-desc{
+    height: 15px;
+
+}
+.about{
+    overflow:show;
+    text-overflow:clip;
+    white-space: normal;
+    height: 45px;
+}
+.aboutMod{
+    overflow:show;
+    text-overflow:clip;
+    white-space: normal;
+    height: 45px;
+}
+.tdImage{
+    max-height:110px;
+	max-width:100px;
+    margin-right: 5px;
+    }
+
+.tdName{
+ font-size: 12px;
+}
+.tdPopulation{
+    font-size: 12px;
+}
+.descript{
+    font-size:12px;
+    margin: 4px;
+
+}
+#map-page, #map-canvas {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.gMap{
+border: 6px solid black;
+}
+.locationT{
+maring-top:2px;
+}
+
+.ui-page{
+background:  #ffeee6; !important;
+}
+.ui-content{
+padding: 0;
+    background:  #ffeee6; !important;
+
+}
