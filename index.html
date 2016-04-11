@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Colombia's Best Placeses</title>
+    <title>Real State Guide</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css"/>
+    <link rel="stylesheet" style="text/css" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css"/>
     <link rel="stylesheet" href="style/main.css"/>
 
     <script src="http://maps.googleapis.com/maps/api/js"></script>
@@ -15,22 +15,22 @@
     <script type="text/javascript" src="lib/.ui.min.js"></script>
 </head>
 <body>
-
+<!-- home page-->
     <div data-role="page" id=home>
-        <div data-role="header" data-position="fixed">
-            <h3>Colombia</h3>
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>Real State & Apartments</h1>
         </div>
         <div data-role="content">
 
                 <ul data-role="listview">
                     <li><a href="#city1" data-transition="slide">
-                          <img src="images/bogota.png" alt="Bogota City"></img>
-                          <h3><b>Bogota</b></h3>
-                          <p class="about">The National Capital, the largest and most populated city</p>
+                          <img src="images/house.jpg" alt="Bogota City"></img>
+                          <h3><b>346 Northlake Drive, </b></h3>
+                          <p class="about">Waterloo 4 beds, 3 baths</p>
                         </a>
                     </li>
                     <li><a href="#city2" data-transition="slide">
-                          <img src="images/medellin.jpg" alt="Bogota City"></img>
+                          <img src="images/house2.jpg" alt="Bogota City"></img>
                           <h3><b>Medellin</b></h3>
                           <p class="about">It's the second largest city in Colombia</p>
                         </a>
@@ -68,7 +68,7 @@
                 </ul>
 
         </div>
-        <div data-role="footer" data-position="fixed" data-id="fixedFooter">
+        <div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
@@ -82,7 +82,7 @@
 
 <!-- second page-->
 
-   <div data-role="page" id="city1" data-add-back-btn="true" >
+   <div data-role="page" id="city1" data-add-back-btn="true" data-back-btn-text="Home">
         <div data-role="header" data-position="fixed">
             <h1>Bogota</h1>
         </div>
