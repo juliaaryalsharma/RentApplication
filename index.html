@@ -13,6 +13,9 @@
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
     <script type="text/javascript" src="lib/.ui.min.js"></script>
+
+
+
 </head>
 <body>
 <!-- ========================================= home page ======================================-->
@@ -25,7 +28,7 @@
                 <ul data-role="listview">
                     <li><a href="#city1" data-transition="slide">
                           <img src="images/house.jpg" alt="Bogota City"></img>
-                          <h3><b>346 Northlake Drive, </b></h3>
+                          <h3><b>346 Northlake Drive</b></h3>
                           <p class="about">Waterloo 4 beds, 3 baths</p>
                         </a>
                     </li>
@@ -84,18 +87,26 @@
 
    <div data-role="page" id="city1" data-add-back-btn="true" data-back-btn-text="Home">
         <div data-role="header" data-position="fixed" data-theme="b">
-            <h1>Bogota</h1>
+            <h1>Home 1</h1>
         </div>
         <div data-role="content">
                 <table>
-                    <tr><td rowspan="3"><img src="images/bogota.png" class="tdImage"></td><td><h3>Bogota</h3></td></tr>
+                    <tr><td rowspan="3"><img src="images/bogota.png" class="tdImage"></td><td><h3>Home adress</h3></td></tr>
                     <tr><td class="tdName">The National Capital, the largest and most populated city</td></tr>
                     <tr><td class="tdPopulation">Weather: 19°C. Pop: 6.763 mill.</td></tr>
                 </table>
 
-            <p><h4>DESCRIPTION</h4></p>
+            <p><h4 style="text-align:center;">Description</h4></p>
             <p class="descript">Bogotá, the capital of Colombia, located in the center of the country on a vast plain at 2,600 meters above sea level and with a moderate temperature has a population of eight million people from all corners of Colombia; a city as diverse as the entire country. Bogotá has a varied nightlife offering domestic and foreign tourists alike different options and styles.</p>
-            <a href="https://www.youtube.com/watch?v=gHwykIbAZM4" data-role="button" rel="external">VISIT WEBSITE</a>
+            <p><h4 style="text-align:center;">Gallery</h4></p>
+
+
+            <ul>
+                <li><a href="#picture1" id="picture1" data-transition="slide"><img src="images/house.jpg" alt="picture1"></img></a></li>
+                <li><a href="#picture2" id="picture2" data-transition="slide"><img src="images/house.jpg" alt="picture2"></img></a></li>
+                <li><a href="#picture3" id="picture3" data-transition="slide"><img src="images/house.jpg" alt="picture3"></img></a></li>
+
+            </ul>
 
         </div>
         <div data-role="footer" data-position="fixed"  data-theme="b" data-id="fixedFooter">
@@ -273,12 +284,44 @@
             <h1>Location</h1>
     </div>
     <div data-role="content">
-            <p claas="locationT"><center><h2 >General Location</h2></center></p>
-            <p><h4>MAP</h4></p>
-        <p>
-            <iframe class="gMap" width="100%" height="250" frameborder="1" scrolling="no" marginheight="0" marginwidth="0"   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3055943.088089348!2d-74.65639764800677!3d3.20225744447109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C+Bogota%2C+Colombia!5e0!3m2!1sen!2sca!4v1457273278682" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <h4 style="text-align:center;">View Address on Map</h4>
 
-       </p>
+    <script>
+        var myCenter=new google.maps.LatLng(43.502021,-80.556103);
+
+        function initialize()
+        {
+        var mapProp = {
+          center:myCenter,
+          zoom:18,
+          panControl:true,
+          mapTypeId:google.maps.MapTypeId.HYBRID
+          };
+
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+        var marker=new google.maps.Marker({
+          position:myCenter,
+          });
+
+        marker.setMap(map);
+
+        var infowindow = new google.maps.InfoWindow({
+          content:"346 Northlake Drive"+" "+"Waterloo, ON"
+          });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.open(map,marker);
+          });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+ <center><div id="googleMap" style="width:400px;height:340px;"></div></center>
+
+
+
         <a href="#home" data-icon="home" data-role="button">Home</a>
     </div>
     <div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
