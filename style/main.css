@@ -32,14 +32,17 @@ img.ui-li-thumb{
     }
 
 .tdName{
- font-size: 12px;
+ font-size: 13px;
+ font-family:cursive;
 }
-.tdPopulation{
-    font-size: 12px;
+.tdPrice{
+    font-size: 13px;
+    font-family:cursive;
 }
 .descript{
     font-size:12px;
     margin: 4px;
+    font-family:cursive;
 
 }
 #map-page, #map-canvas {
@@ -55,11 +58,11 @@ maring-top:2px;
 }
 
 .ui-page{
-background:  #ffeee6; !important;
+background:  white; !important;
 }
 .ui-content{
 padding: 0;
-    background:  #ffeee6; !important;
+    background: white; !important;
 
 }
 h1{overflow:show;}
