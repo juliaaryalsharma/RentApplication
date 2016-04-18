@@ -1,1 +1,1 @@
-++Real State information app
+Rent information app

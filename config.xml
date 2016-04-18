@@ -6,12 +6,12 @@
         id        = "com.phonegap.helloworld"
         versionCode= "4"
 		version   = "0.0.1">
-    <name>Colombia</name>
+    <name>Rent</name>
     <description>
-        This app allow us to know more about the most important cities of Colombia.
+        This app is to know about the available apartments and houses that are for rent in KW area.
     </description>
-    <author href="http://phonegap.com" email="oscarolc@gmail.com">
-        Oscar Lucero
+    <author href="http://phonegap.com" email="julia.aryal@gmail.com">
+       Julia Sharma, Oscar Lucero, Mansi Baxi
     </author>
 
 
