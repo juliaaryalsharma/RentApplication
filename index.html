@@ -289,63 +289,6 @@
     </div>
 </div>
 
-<!-- ====================== Info Page ================================================-->
-<div data-role="page" id="location">
-    <div data-role="header" data-position="fixed" data-theme="b">
-        <h1>Location</h1>
-    </div>
-    <div data-role="content">
-        <h4 style="text-align:center;">View Address on Map</h4>
-
-        <script>
-            var myCenterTwo=new google.maps.LatLng(43.4856001,-80.5501371);
-
-
-            function initialize()
-            {
-                var mapProp = {
-                    center:myCenter,
-                    zoom:18,
-                    panControl:true,
-                    mapTypeId:google.maps.MapTypeId.HYBRID
-                };
-
-                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-                var marker=new google.maps.Marker({
-                    position:myCenter,
-                });
-
-                marker.setMap(map);
-
-                var infowindow = new google.maps.InfoWindow({
-                    content:"hello"+" "+"Waterloo, ON"
-
-                });
-
-                google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.open(map,marker);
-                });
-            }
-
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
-
-        <center><div id="googleMap" style="width:400px;height:340px;"></div></center>
-
-
-        <a href="#home" data-icon="home" data-role="button">Home</a>
-    </div>
-    <div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#home" data-icon="home">Home</a></li>
-                <li><a href="#location" data-icon="info">Location</a></li>
-
-            </ul>
-        </div>
-    </div>
-</div>
 
 </body>
 </html>
