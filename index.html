@@ -1,337 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Real State Guide</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" style="text/css" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css"/>
-    <link rel="stylesheet" href="style/main.css"/>
+    <head>
+        <title>Rents</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" style="text/css" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css"/>
+        <link rel="stylesheet" href="style/main.css"/>
 
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
 
-    <script src="phonegap.js"></script>
-	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
-    <script type="text/javascript" src="lib/.ui.min.js"></script>
+        <script src="phonegap.js"></script>
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+        <script type="text/javascript" src="lib/.ui.min.js"></script>
 
 
 
-</head>
-<body>
-<!-- ========================================= home page ======================================-->
-    <div data-role="page" id=home>
-        <div data-role="header" data-position="fixed" data-theme="b">
-            <h1>Real State & Apartments</h1>
-        </div>
-        <div data-role="content">
+    </head>
+    <body>
+        <!-- ========================================= home page ======================================-->
+        <div data-role="page" id=home>
+            <div data-role="header" data-position="fixed" data-theme="b">
+                <h1>Rents</h1>
+            </div>
+            <div data-role="content">
 
                 <ul data-role="listview">
                     <li><a href="#city1" data-transition="slide">
-                          <img src="images/house.jpg" alt="Bogota City"></img>
-                          <h3><b>346 Northlake Drive</b></h3>
-                          <p class="about">Waterloo 4 beds, 3 baths</p>
-                        </a>
-                    </li>
-                    <li><a href="#city2" data-transition="slide">
-                          <img src="images/house2.jpg" alt="Bogota City"></img>
-                          <h3><b>Medellin</b></h3>
-                          <p class="about">It's the second largest city in Colombia</p>
-                        </a>
-                    </li>
-                    <li><a href="#city3" data-transition="slide">
-                          <img src="images/cali1.jpg" alt="Bogota City"></img>
-                          <h3><b>Cali</b></h3>
-                          <p class="about">The world capital of salsa music and the sweet cane crops</p>
-                        </a>
-                    </li>
-                    <li><a href="#city4" data-transition="slide">
-                          <img src="images/cartagena.jpg" alt="Bogota City"></img>
-                          <h3><b>Cartagena</b></h3>
-                          <p class="about">A gorgeous fishing village on Colombia's Caribbean coast</p>
-                        </a>
-                    </li>
-                    <li><a href="#city5" data-transition="slide">
-                          <img src="images/cafePark.jpg" alt="Bogota City"></img>
-                          <h3><b>The Coffee Region</b></h3>
-                          <p class="about">It's famous for growing and production of a majority of the Colombian coffee</p>
-                        </a>
-                    </li>
-                    <li><a href="#city6" data-transition="slide">
-                          <img src="images/sanAndresIsl.jpg" alt="Bogota City"></img>
-                          <h3><b>San Andres Island</b></h3>
-                          <p class="about">It's a Colombian coral island in the Caribbean Sea</p>
-                        </a>
-                    </li>
-                    <li><a href="#city7" data-transition="slide">
-                          <img src="images/amazonRiver.jpg" alt="Bogota City"></img>
-                          <h3><b>Amazon Region</b></h3>
-                          <p class="about">The Amazon region has one of the most biodiverse ecosystems in the world</p>
-                        </a>
-                    </li>
-                </ul>
+                        <img src="images/house.jpg" alt="346 Northlake Drive"></img>
+                        <h3><b>346 Northlake Drive</b></h3>
+                        <p class="about">Waterloo 4 beds, 3 baths</p>
+                    </a>
+                </li>
+            <li><a href="#city2" data-transition="slide">
+                <img src="images/house3.jpg" alt=">516-532 Sunnydale"></img>
+                <h3><b>516-532 SUNNYDALE PLACE</b></h3>
+                <p class="about">Beatiful towns houses for rent</p>
+            </a>
+        </li>
+    <li><a href="#city3" data-transition="slide">
+        <img src="images/apa1.jpg" alt="29 Barrel"></img>
+        <h3><b>29 Barrel Yards Blvd</b></h3>
+        <h3><b>Waterloo, ON N2L, Canada</b></h3>
+        <p class="about">Beautiful apartment in Waterloo is for rent</p>
+    </a>
+</li>
+<li><a href="#city4" data-transition="slide">
+    <img src="images/house4.jpg" alt="35 Indigio Street"></img>
+    <h3><b>35 Indigo St, Kitchener</b></h3>
+    <p class="about">Spacious and comfortable single house for rent</p>
+</a>
+</li>
+<li><a href="#city5" data-transition="slide">
+    <img src="images/house5.jpg" alt="295 Evens Pond Cres"></img>
+    <h3><b>259 Evens Pond Cres</b></h3>
+    <p class="about">Amazing location and amanzing house for rent</p>
+</a>
+</li>
+</ul>
 
-        </div>
-        <div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#location" data-icon="info">Location</a></li>
+</div>
+<div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#location" data-icon="info">Location</a></li>
 
-                </ul>
-            </div>
-        </div>
-   </div>
+        </ul>
+    </div>
+</div>
+</div>
 
 
 <!--  =========================================second page ======================================-->
 
-   <div data-role="page" id="city1" data-add-back-btn="true" data-back-btn-text="Home">
-        <div data-role="header" data-position="fixed" data-theme="b">
-            <h1>Home 1</h1>
-        </div>
-        <div data-role="content">
-                <table>
-                    <tr><td rowspan="3"><img src="images/bogota.png" class="tdImage"></td><td><h3>Home adress</h3></td></tr>
-                    <tr><td class="tdName">The National Capital, the largest and most populated city</td></tr>
-                    <tr><td class="tdPopulation">Weather: 19°C. Pop: 6.763 mill.</td></tr>
-                </table>
+<div data-role="page" id="city1" data-add-back-btn="true" data-back-btn-text="Home">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>Home 1</h1>
+    </div>
+    <div data-role="content">
+        <table>
+            <tr><td rowspan="3"><img src="images/bogota.png" class="tdImage"></td><td><h3>Home adress</h3></td></tr>
+            <tr><td class="tdName">The National Capital, the largest and most populated city</td></tr>
+            <tr><td class="tdPopulation">Weather: 19°C. Pop: 6.763 mill.</td></tr>
+        </table>
 
-            <p><h4 style="text-align:center;">Description</h4></p>
-            <p class="descript">Bogotá, the capital of Colombia, located in the center of the country on a vast plain at 2,600 meters above sea level and with a moderate temperature has a population of eight million people from all corners of Colombia; a city as diverse as the entire country. Bogotá has a varied nightlife offering domestic and foreign tourists alike different options and styles.</p>
-            <p><h4 style="text-align:center;">Gallery</h4></p>
-
-
-            <ul>
-                <li><a href="#picture1" id="picture1" data-transition="slide"><img src="images/house.jpg" alt="picture1"></img></a></li>
-                <li><a href="#picture2" id="picture2" data-transition="slide"><img src="images/house.jpg" alt="picture2"></img></a></li>
-                <li><a href="#picture3" id="picture3" data-transition="slide"><img src="images/house.jpg" alt="picture3"></img></a></li>
-
-            </ul>
-
-        </div>
-        <div data-role="footer" data-position="fixed"  data-theme="b" data-id="fixedFooter">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#location" data-icon="info">Location</a></li>
-
-                </ul>
-            </div>
-        </div>
-   </div>
-   <div data-role="page" id="city2" data-add-back-btn="true" data-back-btn-text="Home">
-        <div data-role="header" data-position="fixed" data-theme="b">
-            <h1>Medellin</h1>
-        </div>
-        <div data-role="content">
-                <table>
-                    <tr><td rowspan="3"><img src="images/medellin.jpg" class="tdImage"></td><td><h3>Medellin</h3></td></tr>
-                    <tr><td class="tdName">It is the second largest city in Colombia</td></tr>
-                    <tr><td class="tdPopulation">Weather: 32°C. Pop: 2.184 mill.</td></tr>
-                </table>
-
-            <p><h4>DESCRIPTION</h4></p>
-            <p class="descript">Medellín is the capital of Colombia’s mountainous Antioquia province. Nicknamed the “City of Eternal Spring” for its temperate weather, it hosts a famous annual Flower Festival. Modern metrocables link the city to surrounding barrios and offer sweeping views of the Aburrá Valley below. Sculptures by Fernando Botero decorate downtown's Botero Plaza, while the Museo de Antioquia displays more of the Colombian artist’s work.</p>
-            <a href="https://www.youtube.com/watch?v=kZrHIWrasA0" data-role="button" rel="external">VISIT WEBSITE</a>
-
-        </div>
-        <div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#location" data-icon="info">Location</a></li>
-
-                </ul>
-            </div>
-        </div>
-   </div>
-   <div data-role="page" id="city3" data-add-back-btn="true" data-back-btn-text="Home">
-        <div data-role="header" data-position="fixed" data-theme="b">
-            <h1>Cali</h1>
-        </div>
-        <div data-role="content">
-                <table>
-                    <tr><td rowspan="3"><img src="images/cali1.jpg" class="tdImage"></td><td><h3>Cali</h3></td></tr>
-                    <tr><td class="tdName">The world capital of salsa music and the sweet cane crops</td></tr>
-                    <tr><td class="tdPopulation">Weather: 25°C. Pop: 2.045 mill.</td></tr>
-                </table>
-
-            <p><h4>DESCRIPTION</h4></p>
-            <p class="descript">The Colombian city of Cali, known as the world capital of salsa, also serves as the urban center of the country's Afro-Pacific culture. Host Jacob Edgar discovers why Columbia adopted as its native style the upbeat tropical dance music of salsa. Cali is the kind of place that provides all the substance. It's a hot, gritty city with a passion for life that draws you in and stays with you long after you leave town.</p>
-            <a href="https://www.youtube.com/watch?v=268JDJQn6_w" data-role="button" rel="external">VISIT WEBSITE</a>
-
-        </div>
-        <div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#location" data-icon="info">Location</a></li>
-
-                </ul>
-            </div>
-        </div>
-   </div>
-   <div data-role="page" id="city4" data-add-back-btn="true" data-back-btn-text="Home">
-        <div data-role="header" data-position="fixed" data-theme="b">
-            <h1>Cartagena</h1>
-        </div>
-        <div data-role="content">
-                <table>
-                    <tr><td rowspan="3"><img src="images/bogota.png" class="tdImage"></td><td><h3>Cartagena</h3></td></tr>
-                    <tr><td class="tdName">A gorgeous fishing village on Colombia's Caribbean coast, has excellent beaches, a historic old town</td></tr>
-                    <tr><td class="tdPopulation">Weather: 30°C. Pop 1.075 mill.</td></tr>
-                </table>
-
-            <p><h4>DESCRIPTION</h4></p>
-            <p class="descript">Cartagena is a modern port city on Colombia’s Caribbean coast. At its core is the walled Old Town, with 16th-century plazas, cobblestone streets and colorful colonial buildings. With a tropical climate, the city is a popular beach destination. Reachable by boat are the nearby shores of Isla de Barú and Islas del Rosario, known for their coral reefs and scuba diving.</p>
-            <a href="https://www.youtube.com/watch?v=hrUE2IG3JWw" data-role="button" rel="external">VISIT WEBSITE</a>
-
-        </div>
-        <div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#location" data-icon="info">Location</a></li>
-
-                </ul>
-            </div>
-        </div>
-   </div>
-   <div data-role="page" id="city5" data-add-back-btn="true" data-back-btn-text="Home">
-        <div data-role="header" data-position="fixed" data-theme="b">
-            <h1>The Coffee Region</h1>
-        </div>
-        <div data-role="content">
-                <table>
-                    <tr><td rowspan="3"><img src="images/cafePark.jpg" class="tdImage"></td><td><h3>The Coffee Region</h3></td></tr>
-                    <tr><td class="tdName"> It includes three departments, Armenia, Manizales and Caldas</td></tr>
-                    <tr><td class="tdPopulation">Weather: 19°C. Pop: 1.58 mill.</td></tr>
-                </table>
-
-            <p><h4>DESCRIPTION</h4></p>
-            <p class="descript">The Colombian coffee Region (Spanish: Eje Cafetero), also known as the Coffee Triangle (Spanish: Triángulo del Café) is a part of the Colombian Paisa region in the rural area of Colombia, famous for growing and production of a majority of the Colombian coffee, considered by some as the best coffee in the world. There are three departments in the area: Caldas, Quindío and Risaralda. The most visited cities are Manizales, Armenia and Pereira.</p>
-            <a href="https://www.youtube.com/watch?v=bFdrev7OWlE" data-role="button" rel="external">VISIT WEBSITE</a>
-
-        </div>
-        <div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#location" data-icon="Location">Info</a></li>
-
-                </ul>
-            </div>
-        </div>
-   </div>
-   <div data-role="page" id="city6" data-add-back-btn="true" data-back-btn-text="Home">
-        <div data-role="header" data-position="fixed" data-theme="b">
-            <h1>San Andres Island</h1>
-        </div>
-        <div data-role="content">
-                <table>
-                    <tr><td rowspan="3"><img src="images/sanAndresIsl.jpg" class="tdImage"></td><td><h3>San Andres Island</h3></td></tr>
-                    <tr><td class="tdName">It is a popular tourism destination and diving attraction</td></tr>
-                    <tr><td class="tdPopulation">Weather: 34°C. Pop: 67.912</td></tr>
-                </table>
-
-            <p><h4>DESCRIPTION</h4></p>
-            <p class="descript">It is a popular tourism destination and diving attraction. The island is actually part of the San Andres Archipelago that includes San Andres, Providencia and Santa Catalina. San Andres lies off the northeast coast of Colombia more than 400 miles and sits adjacent to Nicaragua. Colombia gained control over the islands in 1928 as part of the Esguerra-Bárcenas treaty with Nicaragua. The territory has been a hot topic of debate over the last decade as Nicaragua has attempted to regain control over the area through legal protests in international courts.</p>
-            <a href="https://www.youtube.com/watch?v=LWhh6sGzdhA" data-role="button" rel="external">VISIT WEBSITE</a>
-
-        </div>
-        <div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#location" data-icon="info">Location</a></li>
-
-                </ul>
-            </div>
-        </div>
-   </div>
-   <div data-role="page" id="city7" data-add-back-btn="true" data-back-btn-text="Home">
-        <div data-role="header" data-position="fixed" data-theme="b">
-            <h1>Amazon Region</h1>
-        </div>
-        <div data-role="content">
-                <table>
-                    <tr><td rowspan="3"><img src="images/amazonRiver.jpg" class="tdImage"></td><td><h3>Amazon Region</h3></td></tr>
-                    <tr><td class="tdName">The National Capital, the largest and most populated city</td></tr>
-                    <tr><td class="tdPopulation">Weather: 28°C. Pop: 500.912</td></tr>
-                </table>
-
-            <p><h4>DESCRIPTION</h4></p>
-            <p class="descript">In Colombia, the Amazon region is formed not only by the Amazonas department in the south east of the country but also by other five departments that share the same type of weather and landscape as the Amazon, which are: Vaupés, Caquetá, Guainía, Guaviare and Putumayo. The high diversity of plants and animal species are found in this area of the country contributes to place Colombia as the most biodiverse country in the world per square meter.</p>
-            <a href="https://www.youtube.com/watch?v=csnZhpt74Zo" data-role="button" rel="external">VISIT WEBSITE</a>
-
-        </div>
-        <div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#location" data-icon="info">Location</a></li>
-
-                </ul>
-            </div>
-        </div>
-   </div>
+        <p><h4 style="text-align:center;">Description</h4></p>
+    <p class="descript">Bogotá, the capital of Colombia, located in the center of the country on a vast plain at 2,600 meters above sea level and with a moderate temperature has a population of eight million people from all corners of Colombia; a city as diverse as the entire country. Bogotá has a varied nightlife offering domestic and foreign tourists alike different options and styles.</p>
+    <p><h4 style="text-align:center;">Gallery</h4></p>
 
 
+<ul>
+    <li><a href="#picture1" id="picture1" data-transition="slide"><img src="images/house.jpg" alt="picture1"></img></a></li>
+<li><a href="#picture2" id="picture2" data-transition="slide"><img src="images/house.jpg" alt="picture2"></img></a></li>
+<li><a href="#picture3" id="picture3" data-transition="slide"><img src="images/house.jpg" alt="picture3"></img></a></li>
+
+</ul>
+
+</div>
+<div data-role="footer" data-position="fixed"  data-theme="b" data-id="fixedFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#location" data-icon="info">Location</a></li>
+
+        </ul>
+    </div>
+</div>
+</div>
+<div data-role="page" id="city2" data-add-back-btn="true" data-back-btn-text="Home">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>516-532 SUNNYDALE PLACE</h1>
+    </div>
+    <div data-role="content">
+        <table>
+            <tr><td rowspan="3"><img src="images/house3.jpg" class="tdImage"></td><td><h3>516-532 SUNNYDALE PLACE</h3></td></tr>
+            <tr><td class="tdName">3 AND 4 BEDROOM TOWNHOUSES</td></tr>
+            <tr><td class="tdPopulation">Price $1,200.00</td></tr>
+        </table>
+
+        <p><h4>DESCRIPTION</h4></p>
+    <p class="descript">Quiet townhouse complex ideal for families, working professionals and students.
+        Units available starting immediately, May or September.<br>
+        Townhouse complex located close to both universities (UW and WLU), Research & Technology Park and several shopping centres. Also, complex is located right on the iXpress and #9 bus routes. <br>
+        Main entrance is at Parkside Drive & Bearinger Road.Townhouses are 2 storey plus a full basement. Main floor includes a large family room, dining room and kitchen; Upper floor has the bedrooms and bathroom; Plus there is an unfinished basement with in-suite laundry and extra storage space. 4 bedroom units have 2 bathrooms.<br>
+        New high efficiency gas furnaces! Backyard access from family room.
+        Parking also available. Snow, grass and maintenance done for you. <br>
+        Rental Rates: <br>
+        - 3 bedroom townhouse: $1200/month plus utilities <br>
+        - 4 bedroom townhouse: $1400/month plus utilities <br>
+        Also renting individual rooms.
+        Some furnished bedrooms are available (ask for details!) </p>
+    <a href="http://www.rentmyspace.ca/" data-role="button" rel="external">VISIT WEBSITE</a>
+
+</div>
+<div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#location" data-icon="info">Location</a></li>
+
+        </ul>
+    </div>
+</div>
+</div>
+<div data-role="page" id="city3" data-add-back-btn="true" data-back-btn-text="Home">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>Cali</h1>
+    </div>
+    <div data-role="content">
+        <table>
+            <tr><td rowspan="3"><img src="images/apa174.jpg" class="tdImage"></td><td><h3>29 Barrel Yards Blvd, Waterloo, ON N2L, Canada</h3></td></tr>
+            <tr><td class="tdName">Nice location and beautiful apartment</td></tr>
+            <tr><td class="tdPopulation">Price: $1,300.00</td></tr>
+        </table>
+
+        <p><h4>DESCRIPTION</h4></p>
+    <p class="descript">12th floor apartment for rent at The Onyx, 29 Barrel Yards Boulevard, Waterloo, Ontario. Apartment has only 7 months of use and has been very well taken care of. Includes full kitchen, in-suite laundry and dishwasher, fridge, stove and microwave appliances included. 1 bedroom, 1 bath, 1 den and balcony overlooking Waterloo to the west. Apartment will be unfurnished. Amenities include a gym, theatre, outdoor pool and BBQ area. One underground parking space included as well as bike storage. Minutes to Universities and uptown Waterloo. 6 month lease available from May to October. For anything longer than 6 months the lease will be on a month to month basis, so should you wish the leave after October you will be able to. However, monthly rent will increase to $1640 per month. Currently no hydro or water utilities cost, although they may start in the next few months as the building itself is being finished. Heating and cooling is included. This is a lease takeover as I am leaving the province. Contact me by email at bmasschelein@hotmail.com. If this ad is up, the apartment is still available.</p>
+    <a href="http://www.rentmyspace.ca/" data-role="button" rel="external">VISIT WEBSITE</a>
+
+</div>
+<div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#location" data-icon="info">Location</a></li>
+
+        </ul>
+    </div>
+</div>
+</div>
+<div data-role="page" id="city4" data-add-back-btn="true" data-back-btn-text="Home">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>35 Indigo St</h1>
+    </div>
+    <div data-role="content">
+        <table>
+            <tr><td rowspan="3"><img src="images/house4.jpg" class="tdImage"></td><td><h3>35 Indigo St, Kitchener</h3></td></tr>
+            <tr><td class="tdName">Spacious and comfortable single house for rent: three bedrooms, two and a half bathrooms. </td></tr>
+            <tr><td class="tdPopulation">Price $1,600.00</td></tr>
+        </table>
+
+        <p><h4>DESCRIPTION</h4></p>
+    <p class="descript">Has an open sized main floor with a large living, dining and kitchen area.
+        Includes 5 appliances: refrigerator, oven, dishwasher, washer and dryer.<br>
+        Finished basement with a laundry room and a storage room. Fully fenced yard with deck and storage shed. House also has central vacuum system, water softener as well as air conditioning.The location of the house is very close to shopping plazas as well as highway 7/8.
+        $1600/month plus utilities.<br>
+        The house will be available mid-May to beginning of June
+        Please contact us by email: duxc6705@hotmail.com (Highly preferred)
+        Or by phone (519-742-4753) I will be happy to answer any question and to set up a viewing of the house.</p>
+    <a href="http://www.rentmyspace.ca/" data-role="button" rel="external">VISIT WEBSITE</a>
+
+</div>
+<div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#location" data-icon="info">Location</a></li>
+
+        </ul>
+    </div>
+</div>
+</div>
+<div data-role="page" id="city5" data-add-back-btn="true" data-back-btn-text="Home">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>259 Evens Pond Cres</h1>
+    </div>
+    <div data-role="content">
+        <table>
+            <tr><td rowspan="3"><img src="images/house5.jpg" class="tdImage"></td><td><h3>259 Evens Pond Cres</h3></td></tr>
+            <tr><td class="tdName">Excellent opportunity for large family, retirees and/or professionals</td></tr>
+            <tr><td class="tdPopulation">Price $2,499.00.</td></tr>
+        </table>
+
+        <p><h4>DESCRIPTION</h4></p>
+    <p class="descript">Excellent opportunity for large family, retirees and/or professionals. This home is approximately 3000 Sqft of living space with extensive upgrades throughout, fully equipped Eat-in Kitchen, over sized living room and family room. High-demand Area of Kitchener, new development and the home is approximately three years old with a large yard and large canopy. Easy -excess to 401 and Waterloo/ Kitchener Universities and Colleges and downtown kitchener. Very convenient location with easy walk to grocery stores, mall, schools and restaurants. Beautiful walking trails through naturally forested areas, many parks, Community Center and KPL with full schedule of family events. Family friendly safe neighborhood.<br>
+        Please review the pictures, contact us to view the home. 519-954-9300
+        OPEN HOUSE BETWEEN 2-4pm ON SUNDAY </p>
+    <a href="http://www.rentmyspace.ca/" data-role="button" rel="external">VISIT WEBSITE</a>
+
+</div>
+<div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#location" data-icon="Location">Info</a></li>
+
+        </ul>
+    </div>
+</div>
+</div>
 
 <!-- ====================== Info Page ================================================-->
 <div data-role="page" id="location">
     <div data-role="header" data-position="fixed" data-theme="b">
-            <h1>Location</h1>
+        <h1>Location</h1>
     </div>
     <div data-role="content">
-            <h4 style="text-align:center;">View Address on Map</h4>
+        <h4 style="text-align:center;">View Address on Map</h4>
 
-    <script>
-        var myCenter=new google.maps.LatLng(43.502021,-80.556103);
+        <script>
+            var myCenter=new google.maps.LatLng(43.502021,-80.556103);
 
-        function initialize()
-        {
-        var mapProp = {
-          center:myCenter,
-          zoom:18,
-          panControl:true,
-          mapTypeId:google.maps.MapTypeId.HYBRID
-          };
 
-        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            function initialize()
+            {
+                var mapProp = {
+                    center:myCenter,
+                    zoom:18,
+                    panControl:true,
+                    mapTypeId:google.maps.MapTypeId.HYBRID
+                };
 
-        var marker=new google.maps.Marker({
-          position:myCenter,
-          });
+                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-        marker.setMap(map);
+                var marker=new google.maps.Marker({
+                    position:myCenter,
+                });
 
-        var infowindow = new google.maps.InfoWindow({
-          content:"346 Northlake Drive"+" "+"Waterloo, ON"
-          });
+                marker.setMap(map);
 
-        google.maps.event.addListener(marker, 'click', function() {
-          infowindow.open(map,marker);
-          });
-        }
+                var infowindow = new google.maps.InfoWindow({
+                    content:"346 Northlake Drive"+" "+"Waterloo, ON"
 
-        google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+                });
 
- <center><div id="googleMap" style="width:400px;height:340px;"></div></center>
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map,marker);
+                });
+            }
 
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+        <center><div id="googleMap" style="width:400px;height:340px;"></div></center>
 
 
         <a href="#home" data-icon="home" data-role="button">Home</a>
     </div>
     <div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#location" data-icon="info">Location</a></li>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home">Home</a></li>
+                <li><a href="#location" data-icon="info">Location</a></li>
 
-                </ul>
-            </div>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ====================== Info Page ================================================-->
+<div data-role="page" id="location">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>Location</h1>
+    </div>
+    <div data-role="content">
+        <h4 style="text-align:center;">View Address on Map</h4>
+
+        <script>
+            var myCenterTwo=new google.maps.LatLng(43.4856001,-80.5501371);
+
+
+            function initialize()
+            {
+                var mapProp = {
+                    center:myCenter,
+                    zoom:18,
+                    panControl:true,
+                    mapTypeId:google.maps.MapTypeId.HYBRID
+                };
+
+                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+                var marker=new google.maps.Marker({
+                    position:myCenter,
+                });
+
+                marker.setMap(map);
+
+                var infowindow = new google.maps.InfoWindow({
+                    content:"hello"+" "+"Waterloo, ON"
+
+                });
+
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map,marker);
+                });
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+        <center><div id="googleMap" style="width:400px;height:340px;"></div></center>
+
+
+        <a href="#home" data-icon="home" data-role="button">Home</a>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="fixedFooter" data-theme="b">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home">Home</a></li>
+                <li><a href="#location" data-icon="info">Location</a></li>
+
+            </ul>
+        </div>
     </div>
 </div>
 
