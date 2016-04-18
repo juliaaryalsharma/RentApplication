@@ -1,1 +1,1 @@
-Rent information app
+This application is for those people who are looking for an apartment or a house which are on rent. It provides list of avaiable apartments and houses in Kitchener-Waterloo area which are on rent. 
