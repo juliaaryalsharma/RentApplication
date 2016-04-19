@@ -63,12 +63,12 @@
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
-    <icon src="images/col.png"   gap:platform="android"    gap:qualifier="ldpi" />
-    <icon src="images/col.png"   gap:platform="android"    gap:qualifier="mdpi" />
-    <icon src="images/col.png"   gap:platform="android"    gap:qualifier="hdpi" />
-    <icon src="images/col.png"  gap:platform="android"    gap:qualifier="xhdpi" />
-    <icon src="images/col.png"     gap:platform="blackberry" />
-    <icon src="images/col.png"     gap:platform="blackberry" gap:state="hover"/>
+    <icon src="images/rent.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="images/rent.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="images/rent.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="images/rent.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+    <icon src="images/rent.png"     gap:platform="blackberry" />
+    <icon src="images/rent.png"     gap:platform="blackberry" gap:state="hover"/>
     <icon src="res/icon/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
     <icon src="res/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
     <icon src="res/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
