@@ -3,12 +3,12 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.helloworld"
+        id        = "com.phonegap.rentapplication"
         versionCode= "4"
-		version   = "0.0.1">
+		version   = "3.7.0">
     <name>Rent</name>
     <description>
-        This app is to know about the available apartments and houses that are for rent in KW area.
+        This app is to know about the available apartments and houses that are for rent in Kitchener- Waterloo area.
     </description>
     <author href="http://phonegap.com" email="julia.aryal@gmail.com">
        Julia Sharma, Oscar Lucero, Mansi Baxi
